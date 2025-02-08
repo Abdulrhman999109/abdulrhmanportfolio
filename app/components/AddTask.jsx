@@ -8,7 +8,7 @@ export default function AddTask({ onAdd }) {
 
   const handleAdd = (e) => {
     e.preventDefault();
-    if (input.trim() !== "") {
+    if (input) {
       onAdd(input);
       setInput("");
     }
